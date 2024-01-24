@@ -7,8 +7,8 @@ export const Mosam = (props) => {
         <div className="flex flex-col items-center">
           <h3 className="text-2xl text-blue-950">
             {props.data && props.data.main
-              ? "Aaj ka taapmaan :cloud:" + props.data.main.temp + "°C"
-              : "Jaaniye aaj ka mausam"}
+              ? "Aaj ka taapmaan :" + props.data.main.temp + "°C"
+              : "Jaaniye aaj ka mausam :cloud"}
           </h3>
           <div className="mt-2">
             <form onSubmit={props.fetch}>
